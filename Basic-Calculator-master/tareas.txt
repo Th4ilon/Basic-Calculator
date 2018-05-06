@@ -1,0 +1,9 @@
+TAREA DE LA FECHA 6/5/18
+
+task funcionalidad basica de la calculadora (tarea principal):
+1�recoger valores del input js
+2�hacer una funcion suma en js
+3�funcionalidad total del boton mas js
+4� funcionalidad total de boton = js
+5º funcionalidad total del boton X
+6ª funcionalidad total del boton /

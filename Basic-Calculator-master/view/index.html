@@ -5,9 +5,24 @@
     </head>
     
 	<body>
-        <h1>Calculadora</h1>
-        <input type="button" value="+" onClick="document.calculator.ans.value+='+'">
-        <input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+	<h1>Calculadora</h1>
+        <input type="button" value="+" onClick="recibir()">
+	<input type="button" value="=" onClick="resultado()">
+	<input type="text" id="numero" value="pepito">
 	</body>
+	<script language="javascript"> 
+	var valor;
+	var resultado;
+	var valor2;
+		function recibir()
+			{
+			valor = document.getElementById("numero").value;        			
+			}   
+		function resultado()
+			{
+			valor2 = document.getElementById("numero").value;
+			resultado=parseInt(valor)+parseInt(valor2);
+			console.log (resultado);
+			}
+	</script>
 </html>
-		git
