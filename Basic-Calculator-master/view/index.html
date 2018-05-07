@@ -6,22 +6,39 @@
     
 	<body>
 	<h1>Calculadora</h1>
-        <input type="button" value="+" onClick="recibir()">
+	<input type="button" id="multiplicar"value="*" onClick="operacionMultiplicar()">
+    <input type="button" id="sumar"value="+" onClick="operacionSuma()">
 	<input type="button" value="=" onClick="resultado()">
 	<input type="text" id="numero" value="pepito">
+	
 	</body>
 	<script language="javascript"> 
 	var valor;
 	var resultado;
 	var valor2;
-		function recibir()
+	var suma="";
+	var multiplicar="";
+		function operacionSuma()
 			{
-			valor = document.getElementById("numero").value;        			
-			}   
+			valor = document.getElementById("numero").value;
+			suma= document.getElementById("sumar").value;
+			}
+			function operacionMultiplicar()
+			{
+			valor = document.getElementById("numero").value;
+			multiplicar= document.getElementById("multiplicar").value; 
+			}
+		
 		function resultado()
 			{
 			valor2 = document.getElementById("numero").value;
+			if (suma==="+") {
+			suma="";
 			resultado=parseInt(valor)+parseInt(valor2);
+			} else if(multiplicar==="*") {
+			multiplicar="";
+			resultado=parseInt(valor)*parseInt(valor2);	
+			}
 			console.log (resultado);
 			}
 	</script>
