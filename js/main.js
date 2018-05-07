@@ -1,28 +1,35 @@
-// import functionName from './test'
+$(document).ready(function(){
 
     var valor;
-	var resultado;
+	var resultadoTotal;
     var valor2;
     var operacionFinal = "";
-    
-	function Operacion(operacion)
+    /**
+     * Operacion.
+     */
+	Operacion = function Operacion(operacion)
 	{
         valor = document.getElementById("numero").value;    
         operacionFinal = operacion;
 	}
-		
-    function resultado()
+	/**
+     * Funcion resultado .
+     */	
+    resultado = function resultado()
 	{
 		valor2 = document.getElementById("numero").value;
         if (operacionFinal==="+") 
         {
            operacionFinal="";
-		   resultado=parseInt(valor)+parseInt(valor2);
+		   resultadoTotal = parseInt(valor)+parseInt(valor2);
         } 
         else if(operacionFinal==="*") 
         {
             operacionFinal="";
-		   resultado=parseInt(valor)*parseInt(valor2);	
+            resultadoTotal = parseInt(valor)*parseInt(valor2);	
 		}
-	    console.log (resultado);
+	    console.log (resultadoTotal);
     }
+   
+});
+   
