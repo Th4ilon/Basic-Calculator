@@ -12,4 +12,5 @@ TAREA DE LA FECHA 7/5/18
 Principal: que se vea el resultado (prioridad 1)
 Principal: poder hacer operaciones multiples
 principal: añadir los botones del 0 al 9, borrar,
+subtarea: hacer que se borren los numeros al dar a los botones de operacion
 feature: calculos con decimales
