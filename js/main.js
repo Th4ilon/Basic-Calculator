@@ -1,10 +1,9 @@
 // import functionName from './test'
 
-	var valor;
+    var valor;
 	var resultado;
     var valor2;
     var operacionFinal = "";
-	
     
 	function Operacion(operacion)
 	{
@@ -27,15 +26,3 @@
 		}
 	    console.log (resultado);
     }
-    
-/*    function eventFire(el, etype){
-        if (el.fireEvent) {
-          el.fireEvent('on' + etype);
-        } else {
-          var evObj = document.createEvent('Events');
-          evObj.initEvent(etype, true, false);
-          el.dispatchEvent(evObj);
-        }
-      }
-      operacionSuma(document.getElementById('mytest1'), 'click');
-      */
