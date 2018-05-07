@@ -7,3 +7,9 @@ task funcionalidad basica de la calculadora (tarea principal):
 4� funcionalidad total de boton = js
 5º funcionalidad total del boton X
 6ª funcionalidad total del boton /
+
+TAREA DE LA FECHA 7/5/18
+Principal: que se vea el resultado (prioridad 1)
+Principal: poder hacer operaciones multiples
+principal: añadir los botones del 0 al 9, borrar,
+feature: calculos con decimales

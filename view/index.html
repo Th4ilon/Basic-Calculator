@@ -2,45 +2,19 @@
 <html>
 	<head>
   	<title> Calculadora </title>
+	  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     </head>
     
 	<body>
 	<h1>Calculadora</h1>
-	<input type="button" id="multiplicar"value="*" onClick="operacionMultiplicar()">
-    <input type="button" id="sumar"value="+" onClick="operacionSuma()">
+	<input type="button" id="restar" value="-" onClick="Operacion('-')">
+	<input type="button" id="dividir" value="/" onClick="Operacion('/')">
+	<input type="button" id="multiplicar" value="*" onClick="Operacion('*')">
+    <input type="button" id="sumar" value="+" onClick="Operacion('+')">
 	<input type="button" value="=" onClick="resultado()">
-	<input type="text" id="numero" value="pepito">
-	<input type="button" id="dividir"value="/" onClick="operacionDividir()">
+	<input type="text" id="numero" value="0">
 	
 	</body>
-	<script language="javascript"> 
-	var valor;
-	var resultado;
-	var valor2;
-	var suma="";
-	var multiplicar="";
-		function operacionSuma()
-			{
-			valor = document.getElementById("numero").value;
-			suma= document.getElementById("sumar").value;
-			}
-			function operacionMultiplicar()
-			{
-			valor = document.getElementById("numero").value;
-			multiplicar= document.getElementById("multiplicar").value; 
-			}
-		
-		function resultado()
-			{
-			valor2 = document.getElementById("numero").value;
-			if (suma==="+") {
-			suma="";
-			resultado=parseInt(valor)+parseInt(valor2);
-			} else if(multiplicar==="*") {
-			multiplicar="";
-			resultado=parseInt(valor)*parseInt(valor2);	
-			}
-			console.log (resultado);
-			}
-	</script>
+	<script src="../js/main.js"></script>
+	<script src="../js/validations.js"></script>
 </html>
