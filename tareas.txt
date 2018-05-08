@@ -14,3 +14,6 @@ Principal: poder hacer operaciones multiples
 principal: añadir los botones del 0 al 9, borrar,
 subtarea: hacer que se borren los numeros al dar a los botones de operacion
 feature: calculos con decimales
+
+TAREA DE LA FECHA 8/5/18
+1º crear funcion de jquery que sustituya toda la funcion ya hecha (buscar jquery onclick events)
