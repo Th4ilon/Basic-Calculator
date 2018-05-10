@@ -17,3 +17,7 @@ feature: calculos con decimales
 
 TAREA DE LA FECHA 8/5/18
 1º crear funcion de jquery que sustituya toda la funcion ya hecha (buscar jquery onclick events)
+
+TAREA DE LA FECHA 9/5/18
+1º meter decimales en la calculadora
+2º resumir la funcion operando (redundante)

@@ -8,6 +8,7 @@
 var operandoa;
 var operandob;
 var operacion;
+
 function init(){
     var resultado = document.getElementById('resultado');
     /*$(".test").on("click",function (e) {
@@ -18,10 +19,20 @@ function init(){
      * 
      * 
      */
+$(".coma").on("click",function (){
+
+  var operandoc = resultado.textContent;
+  if(operandoc === 0) {
+    operandoc = '0.';
+   } else if(operandoc.indexOf('.') === -1) {
+        operandoc += '.';
+        resultado.textContent = operandoc;
+   }
+});
   $(".numericButtons").on("click",function (e) {
-    var valorDeEvento = $(this).val();
     resultado.textContent = resultado.textContent + $(this).val();
   });
+
   $(".operadores").on("click",function (e) {
       var valorDeEvento = $(this).val();
       switch (valorDeEvento) {
@@ -74,6 +85,7 @@ function limpiar(){
   }
   $("#igual").on("click", function resolver(){
     var res = 0;
+   if (operandoa !== "" || operandob !== "" ){
     switch(operacion){
       case "suma":
         res = parseFloat(operandoa) + parseFloat(operandob);
@@ -90,7 +102,7 @@ function limpiar(){
       default:
         limpiar();
          break;
-    }
+    }};
     resetear();
     resultado.textContent = res;
   });
